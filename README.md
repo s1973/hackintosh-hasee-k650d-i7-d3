@@ -1,5 +1,5 @@
 # Hackintosh-Catalina-hasee-k650d-i7-d3
-## 在神舟笔记本上使用Clover引导安装Mac OS 10.15 Catalina的一些记录
+## 在神舟笔记本上使用Clover引导安装并驱动Mac OS 10.15 Catalina
 
 > i5机型请移步[https://github.com/daggeryu/k650d-i5-d3-clover](https://github.com/daggeryu/k650d-i5-d3-clover)，感谢 @daggeryu
 
@@ -12,6 +12,12 @@
 | 声卡 | 瑞昱 VT1802 |
 | 网卡 | RealtekRTL8111 + AR5B125 |
 | 硬盘 | ORICO M200 256GB + SanDisk Plus 240G + 希捷酷鱼2T |
+
+## 最终效果
+- **显卡**：必须屏蔽独显，日常使用核显hd4600足够了，ig-platform-id为*0x0a260006*,结合WhateverGreen使用WEG自定义补丁修复显存及花屏等
+- **声卡**：使用VoodooHDA万能驱动
+- **有线网卡**：使用RealtekRTL8111.kext驱动就可以了
+- **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为mini pci-e接口的*博通 BCM94352HMB*，需要屏蔽51针脚以及USB端口定制（蓝牙是走内建usb线路），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用airport handoff sidecar等
 
 ## references
 - https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html
