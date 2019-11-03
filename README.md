@@ -17,9 +17,9 @@
 - **显卡**：必须屏蔽独显，日常使用核显hd4600足够了，ig-platform-id为*0x0a260006*,结合WhateverGreen使用WEG自定义补丁修复显存及花屏等
 - **声卡**：使用VoodooHDA万能驱动
 - **有线网卡**：使用RealtekRTL8111.kext驱动就可以了
-- **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为mini pci-e接口的*博通 BCM94352HMB*，需要屏蔽51针脚以及USB端口定制（蓝牙是走内建usb线路），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用airport handoff sidecar等
+- **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为mini pci-e接口的*博通 BCM94352HMB*，需要屏蔽51针脚以及USB端口定制（蓝牙是走内建usb线路），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用Airport HandOff SideCar等
 
-## references
+## References
 - https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html
 - https://segmentfault.com/a/1190000020642944?utm_source=tag-newest#articleHeader2
 - https://zuiyu1818.cn/posts/Hac_Advanced.html
