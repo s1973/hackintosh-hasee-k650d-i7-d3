@@ -13,11 +13,40 @@
 | 网卡 | RealtekRTL8111 + AR5B125（已更换 BCM94352HMB） |
 | 硬盘 | ORICO M200 256GB + SanDisk Plus 240G + 希捷酷鱼2T |
 
-## 最终效果
-- **显卡**：必须屏蔽独显，日常使用核显hd4600足够了，ig-platform-id为*0x0a260006*,结合WhateverGreen使用WEG自定义补丁修复显存及花屏等
+## 硬件驱动情况
+- **显卡**：必须屏蔽独显，日常使用核显hd4600足够了，*ig-platform-id*为`0x0a260006`,仿冒*device-id*为`0x12040000`,结合WhateverGreen使用WEG自定义补丁修复显存 花屏及HDMI等，开机8苹果及花屏请启用bios里的csm功能，尤其需要注意配置*framebuffer-cursormem*属性，否则容易出现第三方app花屏卡死的情况
 - **声卡**：使用VoodooHDA万能驱动
 - **有线网卡**：使用RealtekRTL8111.kext驱动就可以了
-- **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为Mini pci-e接口的*博通 BCM94352HMB*，需要屏蔽51针脚以及USB端口定制（蓝牙是走内建usb线路），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用AirDrop HandOff SideCar等
+- **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为Mini pci-e接口的*博通 BCM94352HMB*，需要用胶带屏蔽51针脚以及USB端口定制（蓝牙模块走usb总线），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用AirDrop HandOff SideCar等
+- **睡眠+休眠**：正常，可以正常休眠及键鼠唤醒，此类问题一般都可以通过成功驱动电源管理，SSDT变频，显卡及USB端口定制解决
+- **SSDT**：CPU变频正常，推荐[`CPU-S`](http://bbs.pcbeta.com/viewthread-1698338-1-1.html)软件根据实际测试CPU运行频率生成ssdt
+- **USB**：使用usbinjectall配合hackintool进行端口定制，同时禁用clover里USB端口限制补丁，可正常使用USB
+- **内置键盘+触控板**：使用ApplePS2SmartTouchPad驱动
+- **刚开机时系统卡顿**：需要屏蔽多余的hdmi接口，在clover里打如下内核和驱动补丁：
+    ```
+    Name：AppleIntelFramebufferAzul
+    Find：01050900 00040000 87000000
+    replace：FF000900 00040000 87000000
+    ```
+- **内置键盘command和option键错位**：使用[Karabiner](https://pqrs.org/osx/karabiner/)软件更改按键映射
+- **无法正常使用键盘上的home+end等键**：使用*Karabiner*或者在终端里输入以下命令保存文件重启电脑
+    ```
+    $ cd ~/Library
+    $ mkdir KeyBindings
+    $ cd KeyBindings
+    $ vim DefaultKeyBinding.dict
+    {
+    /* Remap Home / End keys to be correct */
+    "\UF729" = "moveToBeginningOfLine:"; /* Home */
+    "\UF72B" = "moveToEndOfLine:"; /* End */
+    "$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+    "$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+    "^\UF729" = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+    "^\UF72B" = "moveToEndOfDocument:"; /* Ctrl + End */
+    "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+    "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
+    }
+    ```
 
 ## References
 - https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html
