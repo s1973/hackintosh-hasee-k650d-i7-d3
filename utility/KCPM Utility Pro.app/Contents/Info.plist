@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>16F73</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>KCPM Utility Pro</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>science.firewolf.kcpmp</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>KCPM Utility Pro</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>6.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>6.3.3570</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>8E3004b</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>16E185</string>
+	<key>DTSDKName</key>
+	<string>macosx10.12</string>
+	<key>DTXcode</key>
+	<string>0833</string>
+	<key>DTXcodeBuild</key>
+	<string>8E3004b</string>
+	<key>FWRepairPermissionsRSS</key>
+	<string>https://www.firewolf.science/rss/RepairPermissions/fwrprss.plist</string>
+	<key>FWXPCHelperBundleIdentifier</key>
+	<string>science.firewolf.kcpmp.helper</string>
+	<key>FWXPCHelperBundleVersion</key>
+	<string>6.3.3570</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.10</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015-2017 FireWolf. All rights reserved.</string>
+	<key>NSMainStoryboardFile</key>
+	<string>Main</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>science.firewolf.kcpmp.helper</key>
+		<string>anchor apple generic and identifier "science.firewolf.kcpmp.helper" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "9DEHECPA28")</string>
+	</dict>
+	<key>SUFeedURL</key>
+	<string>https://www.firewolf.science/rss/KCPMP/fwkcpmp.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>FWKCPMPPublicDSA.pem</string>
+</dict>
+</plist>
