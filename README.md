@@ -11,13 +11,13 @@
 | ---- | ----------  |
 | CPU | Intel Haswell i7-4710MQ |
 | 显卡 | Intel HD Graphics 4600 + NVIDIA GeForce GTX 950M（已屏蔽） |
-| 声卡 | 瑞昱 VT1802 |
+| 声卡 | VIA VT1802P |
 | 网卡 | RealtekRTL8111 + AR5B125（已更换 BCM94352HMB） |
 | 硬盘 | ORICO M200 256GB + SanDisk Plus 240G + 希捷酷鱼2T |
 
 ## 硬件驱动情况
 - **显卡**：必须屏蔽独显，日常使用核显hd4600足够了，*ig-platform-id*为`0x0a260006`,仿冒*device-id*为`0x12040000`,结合WhateverGreen使用WEG自定义补丁修复显存 花屏及HDMI等，开机8苹果及花屏请启用bios里的csm功能，尤其需要注意配置*framebuffer-cursormem*属性，否则容易出现第三方app花屏卡死的情况
-- **声卡**：使用VoodooHDA万能驱动
+- **声卡**：~~使用VoodooHDA万能驱动~~，使用AppleALC仿冒Apple内建声卡，配置*layout-id*为`3`
 - **有线网卡**：使用RealtekRTL8111.kext驱动就可以了
 - **无线网卡+蓝牙**：自带AR5B125无法驱动也没有蓝牙，更换为Mini pci-e接口的*博通 BCM94352HMB*，需要用胶带屏蔽51针脚以及USB端口定制（蓝牙模块走usb总线），使用AirportBrcmFixup+BrcmFirmwareData+BrcmPatchRAM3+BrcmBluetoothInjector驱动，可完美使用AirDrop HandOff SideCar等
 - **睡眠+休眠**：正常，可以正常休眠及键鼠唤醒，此类问题一般都可以通过成功驱动电源管理，SSDT变频，显卡及USB端口定制解决
