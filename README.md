@@ -52,6 +52,7 @@
 
 ## References
 - https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html
+- https://www.kancloud.cn/chandler/mac_os/480611
 - https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
 - https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage
 - https://segmentfault.com/a/1190000020642944?utm_source=tag-newest#articleHeader2
