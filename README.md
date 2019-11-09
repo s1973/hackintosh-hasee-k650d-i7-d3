@@ -3,6 +3,8 @@
 
 > i5机型请移步[https://github.com/daggeryu/k650d-i5-d3-clover](https://github.com/daggeryu/k650d-i5-d3-clover)，感谢 @daggeryu
 
+更多详情请查阅[神舟k650d i7 d3安装和使用黑苹果10.15 Catalina - s1973](https://s1973.top/blog/0015730470006545b49e611cb91470daaacb539b7034eae000)
+
 ## 电脑配置
 
 | 规格  | 详细信息     |
@@ -50,6 +52,8 @@
 
 ## References
 - https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html
+- https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
+- https://github.com/acidanthera/AppleALC/wiki/Installation-and-usage
 - https://segmentfault.com/a/1190000020642944?utm_source=tag-newest#articleHeader2
 - https://zuiyu1818.cn/posts/Hac_Advanced.html
 - https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave-catalina.268964/
