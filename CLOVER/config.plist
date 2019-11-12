@@ -416,6 +416,20 @@
 				ILniAAAAkJA=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable KernelPanic of AppleHDA_HDMI_DP_DRIVER</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				Y29tLmFwcGxlAF9fa2VybmVsX18A
+				</data>
+				<key>Replace</key>
+				<data>
+				bm90LmFwcGxlAF9fa2VybmVsX18A
+				</data>
+			</dict>
 		</array>
 		<key>KextsToPatch</key>
 		<array>
@@ -707,7 +721,7 @@
 				<key>Comment</key>
 				<string>HDMI audio, port 0204, 0x0a260006</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAACHAAAA
