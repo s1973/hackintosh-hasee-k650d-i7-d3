@@ -271,13 +271,25 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAgAAA==
+				</data>
 				<key>framebuffer-cursormem</key>
 				<data>
-				AACQAA==
+				AAAABA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
-				AACQAA==
+				AAAAAw==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
@@ -285,7 +297,7 @@
 				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
-				AAAwAQ==
+				AAAACA==
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
