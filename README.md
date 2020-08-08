@@ -24,6 +24,7 @@
 - **SSDT**：CPU变频正常，推荐[`CPU-S`](http://bbs.pcbeta.com/viewthread-1698338-1-1.html)软件根据实际测试CPU运行频率生成ssdt
 - **USB**：使用usbinjectall配合hackintool进行端口定制，同时禁用clover里USB端口限制补丁，可正常使用USB
 - **内置键盘+触控板**：使用ApplePS2SmartTouchPad驱动
+- **多合一读卡器**：RTL8411B，vendorID为*0x10EC*，设备为ID*0x5287*，使用`cholonam`优化版[Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx)，支持10.15，插入读卡器后片刻可看到新的磁盘
 - **刚开机时系统卡顿**：需要屏蔽多余的hdmi端口0105，在clover里打如下内核和驱动补丁：
     ```
     Name：AppleIntelFramebufferAzul
