@@ -306,6 +306,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
+				<key>No-hda-gfx</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>layout-id</key>
 				<data>
 				AwAAAA==
@@ -432,7 +436,7 @@
 				<key>Comment</key>
 				<string>Disable KernelPanic of AppleHDA_HDMI_DP_DRIVER</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				Y29tLmFwcGxlAF9fa2VybmVsX18A
