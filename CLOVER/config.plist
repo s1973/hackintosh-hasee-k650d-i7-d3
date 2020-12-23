@@ -314,6 +314,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
+				<key>No-hda-gfx</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>layout-id</key>
 				<data>
 				AwAAAA==
@@ -440,7 +444,7 @@
 				<key>Comment</key>
 				<string>Disable KernelPanic of AppleHDA_HDMI_DP_DRIVER</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				Y29tLmFwcGxlAF9fa2VybmVsX18A
@@ -748,6 +752,8 @@
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>MatchOS</key>
+				<string>10.15 beta</string>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -759,18 +765,60 @@
 				<key>Comment</key>
 				<string>disable hdmi, port 0105</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAACHAAAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>MatchOS</key>
+				<string>10.15 beta</string>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
 				/wAJAAAEAACHAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x0a260006 9MB cursor bytes (vbo), 2 ports only</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAYAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.7</string>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				BgAmCgEDAgIAAAACAAAwAQAAkAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x0a260006 disable 0204 port, change 0105 DP port to 0204 HDMI</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.7</string>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
 				</data>
 			</dict>
 		</array>
