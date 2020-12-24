@@ -4,3 +4,5 @@
 ## References
 - https://blog.skk.moe/post/from-clover-to-opencore/
 - https://blog.xjn819.com/post/opencore-guide.html
+- https://blog.daliansky.net/OpenCore-BootLoader.html
+- https://ocbook.tlhub.cn/
