@@ -7,8 +7,18 @@
 3. 键盘触摸板驱动异常
 4. USB定制
 
+## Tips
+- **PS2键盘和触控板** 使用 ApplePS2SmartTouchPad ,注意在opencore里需要加载3项
+- **声卡** 使用 AplleALC 驱动，但需要修复IRQ否则panic，直接使用ssdt-hpet_rtc_timr-fix三件套
+- **电源管理** 使用SMCBatteryManager以及ssdt-lpc ssdt-plug加载
+
+
 ## References
 - https://blog.skk.moe/post/from-clover-to-opencore/
+- https://oc.skk.moe/
 - https://blog.xjn819.com/post/opencore-guide.html
 - https://blog.daliansky.net/OpenCore-BootLoader.html
 - https://ocbook.tlhub.cn/
+- https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html
+- https://github.com/zhutuizhi/k650d-i5-d3-opencore
+- https://kirainmoe.com/blog/post/opencore-migration-experience/
