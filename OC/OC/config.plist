@@ -54,6 +54,14 @@
 				<key>Path</key>
 				<string>SSDT-UIAC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET_RTC_TIMR-fix.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -249,8 +257,6 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key></key>
-				<data></data>
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmCg==</data>
 				<key>device-id</key>
@@ -280,10 +286,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>No-hda-gfx</key>
-				<data>AQAAAA==</data>
 				<key>layout-id</key>
 				<data>AwAAAA==</data>
+				<key>no-hda-gfx</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
