@@ -262,7 +262,7 @@
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
+				<data>AAAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-cursormem</key>
@@ -697,7 +697,7 @@
 				<key>Find</key>
 				<data>BgAmCgEDAwMAAAACAAAwAQAAYAA=</data>
 				<key>Identifier</key>
-				<string>AppleIntelFramebufferAzul</string>
+				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -727,7 +727,7 @@
 				<key>Find</key>
 				<data>AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA</data>
 				<key>Identifier</key>
-				<string>AppleIntelFramebufferAzul</string>
+				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
