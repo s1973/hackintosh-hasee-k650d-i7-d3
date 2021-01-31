@@ -24,11 +24,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>fake EC</string>
+				<string>fake EC and fix usb power</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -40,15 +40,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>fake PMCR PPCR for energe setting</string>
+				<string>fake PMCR PPMC for energe setting</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PM.aml</string>
+				<string>SSDT-FAKE-PMCR-PPMC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>force RTC instead of AWAC</string>
+				<string>force enable RTC instead of AWAC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,11 +56,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>sbus</string>
+				<string>fake devices for mac only</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
+				<string>SSDT-FAKE-DMAC-MEM2.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x6d 04 to 0 patch to disable device wake (need rename GPRW to XPRW patch)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPRW.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBus compatibility table and fake MCHC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -113,6 +129,32 @@
 				<data></data>
 				<key>Replace</key>
 				<data>RDMiEQ==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>GPRW to XPRW</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>R1BSVwI=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFBSVwI=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -447,24 +489,6 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>USBPower.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
