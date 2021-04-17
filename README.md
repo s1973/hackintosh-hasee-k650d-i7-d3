@@ -2,6 +2,7 @@
 更多详情请查阅[神舟k650d i7 d3安装和使用黑苹果10.15 Catalina - s1973](https://s1973.top/blog/0015730470006545b49e611cb91470daaacb539b7034eae000)
 
 ## 在神舟笔记本上使用Clover引导安装并驱动Mac OS 10.15 Catalina
+> 有关OpenCore & Mac OS BigSur，请参考[README-OC](https://github.com/s1973/hackintosh-hasee-k650d-i7-d3/blob/oc/README-OC.md)
 
 > i5机型请移步[https://github.com/daggeryu/k650d-i5-d3-clover](https://github.com/daggeryu/k650d-i5-d3-clover)，感谢 @daggeryu
 
