@@ -29,6 +29,13 @@
     | framebuffer-con1-enable  | 01000000     |  
     | framebuffer-con1-alldata | 02040900 00080000 87000000 FF000000 01000000 40000000   |
 
+## About Upgrade to Mac OS Monterey
+准备工作可以阅读[这篇文章](https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html#table-of-contents)，在迁移至 OpenCore 后，升级已经十分顺滑，基本没有较大的冲突。
+- OpenCore 更新至 0.8.1
+- 所有kext需要升级到最新版以兼容 MacOS Monterey 12.4，尤其是 `Lilu` `VirtualSMC` `WhateverGreen` 三大件
+- 第三方蓝牙需要使用 BlueToolFixup 注入
+- 使用 ACPIBatteryManager 替代 SMCBatteryManager ，以解决睡眠唤醒后的电量假死及CPU持续占用问题
+
 ## ACPI Table
 | Table  | Comment     |
 | ---- | ----------  |
