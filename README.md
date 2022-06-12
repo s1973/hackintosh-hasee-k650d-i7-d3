@@ -4,7 +4,7 @@
 > 本人机器目前闲置转让，感兴趣的可以咸鱼搜索 `s1973 k650d` 查看详情
 
 ## 在神舟笔记本上使用Clover引导安装并驱动Mac OS 10.15 Catalina
-> 有关OpenCore & Mac OS BigSur，请参考[README-OC](https://github.com/s1973/hackintosh-hasee-k650d-i7-d3/blob/oc/README-OC.md)
+> 有关OpenCore & Mac OS BigSur & Mac OS Monterey，请参考[README-OC](https://github.com/s1973/hackintosh-hasee-k650d-i7-d3/blob/oc/README-OC.md)
 
 > i5机型请移步[https://github.com/daggeryu/k650d-i5-d3-clover](https://github.com/daggeryu/k650d-i5-d3-clover)，感谢 @daggeryu
 
